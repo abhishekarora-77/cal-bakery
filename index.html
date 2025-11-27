@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cal’s Bakery & Cafe — Fresh Pastries & Coffee | Order & Visit</title>
+    <meta name="description" content="Cal’s Bakery & Cafe — artisan breads, pastries, sandwiches & handcrafted coffee. Visit us or pre-order for pickup. Check today's specials on Instagram.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#FFF8F0',
+              butter: '#F4D398',
+              cinnamon: '#7B4B3A',
+              sage: '#A9C6B5',
+              espresso: '#2B2B2B',
+              cherry: '#D94848',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            padding: {
+              'safe': 'env(safe-area-inset-bottom)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Cal's Bakery & Cafe",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "telephone": "+15550123456",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Innisfil Beach Rd",
+        "addressLocality": "Innisfil",
+        "addressRegion": "ON",
+        "postalCode": "L9S",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.4025421,
+        "longitude": -79.7190513
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "07:00",
+          "closes": "16:00"
+        }
+      ],
+      "menu": "https://www.instagram.com/cals_bakery_and_cafe/",
+      "priceRange": "$$"
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
