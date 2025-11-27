@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import InfoRibbon from './components/InfoRibbon';
@@ -10,25 +10,10 @@ import Footer from './components/Footer';
 import StickyMobileCTA from './components/StickyMobileCTA';
 
 const App: React.FC = () => {
-  const [isPreview, setIsPreview] = useState(true);
-
   return (
     <div className="font-sans text-espresso bg-cream antialiased selection:bg-butter selection:text-cinnamon">
-      {/* Preview Banner */}
-      {isPreview && (
-        <div className="bg-espresso text-white text-xs text-center py-2 px-4 fixed top-0 w-full z-[60] flex justify-between items-center">
-          <span>PREVIEW MODE: This is a design concept for Cal's Bakery.</span>
-          <button 
-            onClick={() => setIsPreview(false)}
-            className="underline hover:text-butter ml-4"
-          >
-            Dismiss
-          </button>
-        </div>
-      )}
-
       {/* Main Layout */}
-      <div className={`${isPreview ? 'pt-8' : ''}`}>
+      <div>
         <Navigation />
         <main>
           <Hero />

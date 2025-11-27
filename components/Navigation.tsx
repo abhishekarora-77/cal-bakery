@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
             onClick={() => scrollToSection('hero')}
             className={`font-serif text-2xl md:text-3xl font-bold cursor-pointer ${scrolled ? 'text-cinnamon' : 'text-cinnamon md:text-white md:drop-shadow-md'}`}
           >
-            Cal's Bakery
+            Cal's Bakery & Cafe
           </span>
         </div>
 
